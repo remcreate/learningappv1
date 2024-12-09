@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Teacher's Dashboard</h1>
+        </header>
+        <div id="content">
+            <h2>Welcome, Teacher!</h2>
+            <!-- Button to create grade and section -->
+            <button id="create-subject-btn">Add Subject</button>
+            
+            <!-- Form for creating a grade and section -->
+            <div id="create-grade-form" style="display: none; margin-top: 20px;">
+                <label>Subject:</label>
+                <input type="text" id="subject" placeholder="e.g., Mathematics"><br>
+                <label>Grade and Section:</label>
+                <input type="text" id="grade-section" placeholder="e.g., Grade 7 - Section A"><br>
+                <label>School Year:</label>
+                <input type="text" id="school-year" placeholder="e.g., 2023-2024"><br>
+                <button onclick="addGradeSection()">Create Subject</button>
+            </div>
+            
+            <!-- Display created classes -->
+            <div id="class-list" style="margin-top: 30px;">
+                <h3>Your Classes</h3>
+                <div id="classes-container"></div>
+            </div>
+
+            <!-- Placeholder for the class dashboard -->
+            <div id="dashboard-content" style="margin-top: 30px; display: none;">
+                <button class="back-btn" onclick="goBackToDashboard()">← Back to Dashboard</button>
+                <h3 id="dashboard-title">Welcome to Class Dashboard</h3>
+                <button id="upload-btn" style="display: none;">Add Activity/Assignment/Quiz/Resource</button>
+                <!-- Rest of your content -->
+            </div>
+            
+                <div id="content-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link the JavaScript file here -->
+    <script src="teacherdashboard.js"></script>
+</body>
+</html>

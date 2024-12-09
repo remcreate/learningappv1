@@ -1,0 +1,288 @@
+[debug] [2024-12-09T00:21:56.009Z] ----------------------------------------------------------------------
+[debug] [2024-12-09T00:21:56.011Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DEPED\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-09T00:21:56.011Z] CLI Version:   13.28.0
+[debug] [2024-12-09T00:21:56.012Z] Platform:      win32
+[debug] [2024-12-09T00:21:56.012Z] Node Version:  v22.11.0
+[debug] [2024-12-09T00:21:56.012Z] Time:          Mon Dec 09 2024 08:21:56 GMT+0800 (Philippine Standard Time)
+[debug] [2024-12-09T00:21:56.012Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-09T00:21:56.018Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T00:21:56.018Z] > authorizing via signed-in user (rembordz20@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DEPED\Documents\online classroom
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-09T00:24:46.516Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:46.516Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:46.520Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-09T00:24:47.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-09T00:24:47.282Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project pi-classroom-18dd6 (PI Classroom) 
+[info] 
+=== Dataconnect Setup
+[debug] [2024-12-09T00:24:56.813Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:56.814Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:56.814Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/pi-classroom-18dd6/billingInfo [none]
+[debug] [2024-12-09T00:24:58.089Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/pi-classroom-18dd6/billingInfo 200
+[debug] [2024-12-09T00:24:58.089Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/pi-classroom-18dd6/billingInfo {"name":"projects/pi-classroom-18dd6/billingInfo","projectId":"pi-classroom-18dd6","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2024-12-09T00:24:58.091Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:58.091Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:58.092Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com [none]
+[debug] [2024-12-09T00:24:58.092Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T00:24:59.456Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com 200
+[debug] [2024-12-09T00:24:59.456Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2024-12-09T00:24:59.458Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:59.458Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:24:59.458Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com:enable [none]
+[debug] [2024-12-09T00:24:59.458Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T00:25:00.750Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com:enable 200
+[debug] [2024-12-09T00:25:00.750Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2024-12-09T00:25:10.758Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:10.759Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:10.760Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com [none]
+[debug] [2024-12-09T00:25:10.760Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T00:25:12.123Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com 200
+[debug] [2024-12-09T00:25:12.123Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Wrote dataconnect\connector\queries.gql 
+[info] +  Wrote dataconnect\connector\mutations.gql 
+[info] i  If you'd like to add the generated SDK to your app your, run firebase init dataconnect:sdk 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/pi-classroom-18dd6/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2024-12-09T00:25:12.162Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:12.162Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:12.163Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/firestore.googleapis.com [none]
+[debug] [2024-12-09T00:25:12.163Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/firestore.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T00:25:12.682Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/firestore.googleapis.com 200
+[debug] [2024-12-09T00:25:12.682Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/firestore.googleapis.com [omitted]
+[debug] [2024-12-09T00:25:12.683Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:12.683Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:12.683Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default) [none]
+[debug] [2024-12-09T00:25:14.170Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default) 200
+[debug] [2024-12-09T00:25:14.171Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default) {"name":"projects/pi-classroom-18dd6/databases/(default)","uid":"75f8e588-c6b0-4843-8b76-d8562f1314b4","createTime":"2024-12-04T01:19:30.870821Z","updateTime":"2024-12-04T01:19:30.870821Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-12-08T23:25:13.226712Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IN38kq+2mYoDMKWs7pb5jIoD"}
+[debug] [2024-12-09T00:25:14.171Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-12-09T00:25:14.171Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-12-09T00:25:14.172Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T00:25:14.172Z] > authorizing via signed-in user (rembordz20@gmail.com)
+[debug] [2024-12-09T00:25:14.172Z] [iam] checking project pi-classroom-18dd6 for permissions ["firebase.projects.get"]
+[debug] [2024-12-09T00:25:14.173Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:14.173Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:25:14.173Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions [none]
+[debug] [2024-12-09T00:25:14.174Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T00:25:14.174Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T00:25:17.262Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions 200
+[debug] [2024-12-09T00:25:17.262Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-12-09T00:33:36.478Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:33:36.479Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:33:36.479Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/pi-classroom-18dd6/releases pageSize=10&pageToken=
+[debug] [2024-12-09T00:33:38.028Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/pi-classroom-18dd6/releases 200
+[debug] [2024-12-09T00:33:38.028Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/pi-classroom-18dd6/releases {"releases":[{"name":"projects/pi-classroom-18dd6/releases/cloud.firestore","rulesetName":"projects/pi-classroom-18dd6/rulesets/85024851-374d-43ea-b36e-b781de595094","createTime":"2024-12-04T01:19:40.784886Z","updateTime":"2024-12-04T01:19:40.784886Z"}]}
+[debug] [2024-12-09T00:33:38.028Z] Found ruleset: projects/pi-classroom-18dd6/rulesets/85024851-374d-43ea-b36e-b781de595094
+[debug] [2024-12-09T00:33:38.029Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:33:38.029Z] Checked if tokens are valid: true, expires at: 1733706797826
+[debug] [2024-12-09T00:33:38.029Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/pi-classroom-18dd6/rulesets/85024851-374d-43ea-b36e-b781de595094 [none]
+[debug] [2024-12-09T00:33:39.151Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/pi-classroom-18dd6/rulesets/85024851-374d-43ea-b36e-b781de595094 200
+[debug] [2024-12-09T00:33:39.151Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/pi-classroom-18dd6/rulesets/85024851-374d-43ea-b36e-b781de595094 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-12-09T01:38:42.571Z] Checked if tokens are valid: false, expires at: 1733706797826
+[debug] [2024-12-09T01:38:42.580Z] Checked if tokens are valid: false, expires at: 1733706797826
+[debug] [2024-12-09T01:38:42.595Z] > refreshing access token with scopes: []
+[debug] [2024-12-09T01:38:42.635Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-09T01:38:42.638Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-09T01:38:42.707Z] Checked if tokens are valid: false, expires at: 1733706797826
+[debug] [2024-12-09T01:38:42.707Z] Checked if tokens are valid: false, expires at: 1733706797826
+[debug] [2024-12-09T01:38:42.707Z] > refreshing access token with scopes: []
+[debug] [2024-12-09T01:38:42.710Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-09T01:38:42.710Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-09T01:38:47.904Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-09T01:38:47.904Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-09T01:38:47.938Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-12-09T01:38:47.945Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-09T01:38:47.945Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-09T01:38:47.956Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-12-09T01:38:50.507Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-12-09T01:38:50.507Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-12-09T01:38:50.515Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-12-09T01:38:50.515Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/pi-classroom-18dd6/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/pi-classroom-18dd6/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2024-12-09T01:39:07.982Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T01:39:07.984Z] > authorizing via signed-in user (rembordz20@gmail.com)
+[debug] [2024-12-09T01:39:07.984Z] [iam] checking project pi-classroom-18dd6 for permissions ["firebase.projects.get"]
+[debug] [2024-12-09T01:39:07.989Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:07.990Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:07.990Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions [none]
+[debug] [2024-12-09T01:39:07.990Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T01:39:07.990Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T01:39:11.281Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions 200
+[debug] [2024-12-09T01:39:11.281Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T01:39:11.294Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:11.294Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:11.294Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:11.294Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:11.295Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-09T01:39:11.295Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T01:39:11.299Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-09T01:39:11.299Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T01:39:13.232Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-09T01:39:13.232Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-09T01:39:13.239Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-09T01:39:13.239Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-12-09T01:39:13.239Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:13.239Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:13.239Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-12-09T01:39:13.239Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T01:39:14.033Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-12-09T01:39:14.033Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-12-09T01:39:24.037Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:24.037Z] Checked if tokens are valid: true, expires at: 1733711926945
+[debug] [2024-12-09T01:39:24.038Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-09T01:39:24.038Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T01:39:28.828Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-09T01:39:28.828Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 0.9.7
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] Start the Genkit developer experience by running:
+[info] 
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2024-12-09T04:00:50.887Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T04:00:50.889Z] > authorizing via signed-in user (rembordz20@gmail.com)
+[debug] [2024-12-09T04:00:50.889Z] [iam] checking project pi-classroom-18dd6 for permissions ["firebase.projects.get"]
+[debug] [2024-12-09T04:00:50.899Z] Checked if tokens are valid: false, expires at: 1733711926945
+[debug] [2024-12-09T04:00:50.900Z] Checked if tokens are valid: false, expires at: 1733711926945
+[debug] [2024-12-09T04:00:50.900Z] > refreshing access token with scopes: []
+[debug] [2024-12-09T04:00:50.906Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-09T04:00:50.906Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-09T04:00:51.660Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-09T04:00:51.660Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-09T04:00:51.675Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions [none]
+[debug] [2024-12-09T04:00:51.676Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T04:00:51.676Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T04:00:52.687Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions 200
+[debug] [2024-12-09T04:00:52.687Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pi-classroom-18dd6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T04:00:52.688Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:00:52.688Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:00:52.689Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:00:52.689Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:00:52.692Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-09T04:00:52.693Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T04:00:52.696Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-09T04:00:52.696Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/pi-classroom-18dd6
+[debug] [2024-12-09T04:00:54.588Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-09T04:00:54.588Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-09T04:00:54.605Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-09T04:00:54.606Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pi-classroom-18dd6/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote learningappv1/package.json 
+[info] +  Wrote learningappv1/.eslintrc.js 
+[info] +  Wrote learningappv1/index.js 
+[info] +  Wrote learningappv1/.gitignore 
+[info] 
+=== Apphosting Setup
+[debug] [2024-12-09T04:05:57.380Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:05:57.380Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:05:57.380Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/pi-classroom-18dd6/billingInfo [none]
+[debug] [2024-12-09T04:05:58.680Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/pi-classroom-18dd6/billingInfo 200
+[debug] [2024-12-09T04:05:58.680Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/pi-classroom-18dd6/billingInfo {"name":"projects/pi-classroom-18dd6/billingInfo","projectId":"pi-classroom-18dd6","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-09T04:05:58.708Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:05:58.708Z] Checked if tokens are valid: true, expires at: 1733720450660
+[debug] [2024-12-09T04:05:58.709Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pi-classroom-18dd6 [none]
+[debug] [2024-12-09T04:05:59.182Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pi-classroom-18dd6 200
+[debug] [2024-12-09T04:05:59.182Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pi-classroom-18dd6 {"projectId":"pi-classroom-18dd6","projectNumber":"1098506147929","displayName":"PI Classroom","name":"projects/pi-classroom-18dd6","resources":{"hostingSite":"pi-classroom-18dd6"},"state":"ACTIVE","etag":"1_62114cbc-8721-40f6-a7ee-0a4ccea5bc4d"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2024-12-09T04:10:31.997Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-12-09T04:10:32.272Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-12-09T04:10:32.274Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.2","browserURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.2/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.2/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\DEPED\Documents\online classroom is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=870620935&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...

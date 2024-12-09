@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Teacher's Dashboard</h1>
+        </header>
+        <div id="content">
+            <h2>Welcome, Teacher!</h2>
+            <!-- Button to open upload form -->
+            <button id="upload-btn">Add Activity/Assignment/Quiz/Resource</button>
+            
+            <!-- Form for adding content -->
+            <div id="upload-form" style="display: none; margin-top: 20px;">
+                <select id="content-type" onchange="displayFormFields()">
+                    <option value="">Select Type</option>
+                    <option value="assignment">Assignment</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="activity">Activity</option>
+                    <option value="resource">Resource</option>
+                </select>
+
+                <div id="form-fields"></div>
+                <button onclick="addContent()">Add</button>
+            </div>
+
+            <!-- Display the added content -->
+            <div id="dashboard-content" style="margin-top: 30px;">
+                <h3>Uploaded Content</h3>
+                <div id="content-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link the JavaScript file here -->
+    <script src="teacherdashboard.js"></script>
+</body>
+</html>
